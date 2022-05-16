@@ -1,0 +1,64 @@
+body {
+  background-color: gray;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+body button {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+button {
+  width: 8vw;
+  height: 8vw;
+  text-align: center;
+  font-size: 3vw;
+  border: black solid;
+}
+button:hover {
+  cursor: pointer;
+  background-color: darkgray;
+}
+.wrapper {
+  width: 50%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  border: black solid;
+}
+.display {
+  width: 99.4%;
+  height: 20%;
+  font-size: 4vw;
+  text-align: right;
+  background-color: lightblue;
+  border: black solid;
+}
+.under {
+  display: flex;
+}
+.numpad {
+  width: 70%;
+  height: 80%;
+  display: grid;
+  border: black solid;
+}
+.numpad button {
+  width: 100%;
+}
+.operators {
+  width: 30%;
+  height: 80%;
+  display: grid;
+  border: black solid;
+}
+.operators button {
+  width: 100%;
+  background-color: coral;
+}
+.operators button:hover {
+  background-color: rgb(166, 84, 54);
+}
+.red {
+  background-color: #ee5135;
+}
+.red:hover {
+  background-color: #a8321d;
+}

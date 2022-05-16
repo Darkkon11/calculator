@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator from Dennis</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body onload="start()">
+    <div class="wrapper">
+      <div class="display">
+        <p id="var"></p>
+      </div>
+      <div class="under">
+        <div class="numpad">
+          <table>
+            <tr>
+              <td><button onclick="seven()">7</button></td>
+              <td><button>8</button></td>
+              <td><button>9</button></td>
+            </tr>
+            <tr>
+              <td><button>4</button></td>
+              <td><button>5</button></td>
+              <td><button>6</button></td>
+            </tr>
+            <tr>
+              <td><button>3</button></td>
+              <td><button>2</button></td>
+              <td><button>1</button></td>
+            </tr>
+            <tr>
+              <td><button>,</button></td>
+              <td><button>0</button></td>
+              <td><button class="red">=</button></td>
+            </tr>
+          </table>
+        </div>
+        <div class="operators">
+          <table>
+            <tr>
+              <td><button>+</button></td>
+            </tr>
+            <tr>
+              <td><button>-</button></td>
+            </tr>
+            <tr>
+              <td><button>*</button></td>
+            </tr>
+            <tr>
+              <td><button>/</button></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
