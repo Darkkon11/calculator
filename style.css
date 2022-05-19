@@ -45,12 +45,13 @@ button:hover {
 }
 .operators {
   width: 30%;
-  height: 80%;
   display: grid;
   border: black solid;
 }
 .operators button {
   width: 100%;
+  height: auto;
+  padding: 1.1vw;
   background-color: coral;
 }
 .operators button:hover {
