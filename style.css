@@ -50,6 +50,7 @@ button:hover {
 }
 .operators button {
   width: 100%;
+  font-size: 2vw;
   height: auto;
   padding: 1.1vw;
   background-color: coral;

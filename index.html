@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css" />
     <script src="script.js"></script>
   </head>
-  <body onload="start()">
+  <body onload="changeValue()">
     <div class="wrapper">
       <div class="display">
         <p id="var"></p>
@@ -17,29 +17,32 @@
         <div class="numpad">
           <table>
             <tr>
-              <td><button onclick="seven()">7</button></td>
-              <td><button onclick="eigth()">8</button></td>
-              <td><button onclick="nine()">9</button></td>
+              <td><button onclick="setCurrentValue(this)">7</button></td>
+              <td><button onclick="setCurrentValue(this)">8</button></td>
+              <td><button onclick="setCurrentValue(this)">9</button></td>
             </tr>
             <tr>
-              <td><button onclick="four()">4</button></td>
-              <td><button onclick="five()">5</button></td>
-              <td><button onclick="six()">6</button></td>
+              <td><button onclick="setCurrentValue(this)">4</button></td>
+              <td><button onclick="setCurrentValue(this)">5</button></td>
+              <td><button onclick="setCurrentValue(this)">6</button></td>
             </tr>
             <tr>
-              <td><button onclick="three()">3</button></td>
-              <td><button onclick="two()">2</button></td>
-              <td><button onclick="one()">1</button></td>
+              <td><button onclick="setCurrentValue(this)">3</button></td>
+              <td><button onclick="setCurrentValue(this)">2</button></td>
+              <td><button onclick="setCurrentValue(this)">1</button></td>
             </tr>
             <tr>
               <td><button>,</button></td>
-              <td><button onclick="zero()">0</button></td>
+              <td><button onclick="setCurrentValue(this)">0</button></td>
               <td><button class="red">=</button></td>
             </tr>
           </table>
         </div>
         <div class="operators">
           <table>
+            <tr>
+              <td><button onclick="cleanAll()">CLEAN</button></td>
+            </tr>
             <tr>
               <td><button>+</button></td>
             </tr>
@@ -53,7 +56,7 @@
               <td><button>/</button></td>
             </tr>
             <tr>
-              <td><button onclick="del()">DEL</button></td>
+              <td><button onclick="deleteLastNumber()">DEL</button></td>
             </tr>
           </table>
         </div>
