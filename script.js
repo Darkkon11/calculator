@@ -6,11 +6,20 @@ function changeValue() {
 }
 
 function setCurrentValue(elem) {
-  if (displayvar == 0) {
+  if ((displayvar == 0) | ".") {
     displayvar = elem.innerHTML;
   } else {
     displayvar += elem.innerHTML;
   }
+  changeValue();
+  return displayvar;
+}
+
+function setDot(elem) {
+  var lastValue = displayvar.slice(-1);
+  if (lastValue != ".") {
+    displayvar += elem.innerHTML;
+  } // nur ein Dot in ganz Displayvar drin hinzufügen
   changeValue();
   return displayvar;
 }

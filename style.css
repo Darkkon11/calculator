@@ -64,3 +64,6 @@ button:hover {
 .red:hover {
   background-color: #a8321d;
 }
+.display p {
+  margin-right: 0.5vw;
+}
