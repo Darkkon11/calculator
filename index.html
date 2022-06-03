@@ -32,7 +32,7 @@
               <td><button onclick="setCurrentValue(this)">1</button></td>
             </tr>
             <tr>
-              <td><button onclick="setDot(this)">.</button></td>
+              <td><button onclick="setSymbol(this)">.</button></td>
               <td><button onclick="setCurrentValue(this)">0</button></td>
               <td><button class="red">=</button></td>
             </tr>
@@ -44,16 +44,16 @@
               <td><button onclick="cleanAll()">CLEAN</button></td>
             </tr>
             <tr>
-              <td><button>+</button></td>
+              <td><button onclick="setSymbol(this)">+</button></td>
             </tr>
             <tr>
-              <td><button>-</button></td>
+              <td><button onclick="setSymbol(this)">-</button></td>
             </tr>
             <tr>
-              <td><button>*</button></td>
+              <td><button onclick="setSymbol(this)">*</button></td>
             </tr>
             <tr>
-              <td><button>/</button></td>
+              <td><button onclick="setSymbol(this)">/</button></td>
             </tr>
             <tr>
               <td><button onclick="deleteLastNumber()">DEL</button></td>

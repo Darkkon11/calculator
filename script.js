@@ -6,7 +6,7 @@ function changeValue() {
 }
 
 function setCurrentValue(elem) {
-  if ((displayvar == 0) | ".") {
+  if (displayvar == 0) {
     displayvar = elem.innerHTML;
   } else {
     displayvar += elem.innerHTML;
@@ -15,11 +15,11 @@ function setCurrentValue(elem) {
   return displayvar;
 }
 
-function setDot(elem) {
+function setSymbol(elem) {
   var lastValue = displayvar.slice(-1);
-  if (lastValue != ".") {
+  if (lastValue != elem.innerHTML) {
     displayvar += elem.innerHTML;
-  } // nur ein Dot in ganz Displayvar drin hinzufügen
+  }
   changeValue();
   return displayvar;
 }
@@ -32,6 +32,8 @@ function deleteLastNumber() {
   changeValue();
   return displayvar;
 }
+
+function calculate() {}
 
 function cleanAll() {
   displayvar = 0;
