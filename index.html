@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="style.css" />
     <script src="script.js"></script>
   </head>
-  <body onload="changeValue()">
+  <body>
     <div class="wrapper">
       <div class="display">
-        <p id="var"></p>
+        <p id="var">0</p>
       </div>
       <div class="under">
         <div class="numpad">
@@ -32,9 +32,9 @@
               <td><button onclick="setCurrentValue(this)">1</button></td>
             </tr>
             <tr>
-              <td><button onclick="setSymbol(this)">.</button></td>
+              <td><button onclick="setCurrentValue(this)">.</button></td>
               <td><button onclick="setCurrentValue(this)">0</button></td>
-              <td><button class="red">=</button></td>
+              <td><button onclick="calculate(this)" , class="red">=</button></td>
             </tr>
           </table>
         </div>
@@ -44,16 +44,16 @@
               <td><button onclick="cleanAll()">CLEAN</button></td>
             </tr>
             <tr>
-              <td><button onclick="setSymbol(this)">+</button></td>
+              <td><button onclick="setCurrentValue(this)">+</button></td>
             </tr>
             <tr>
-              <td><button onclick="setSymbol(this)">-</button></td>
+              <td><button onclick="setCurrentValue(this)">-</button></td>
             </tr>
             <tr>
-              <td><button onclick="setSymbol(this)">*</button></td>
+              <td><button onclick="setCurrentValue(this)">*</button></td>
             </tr>
             <tr>
-              <td><button onclick="setSymbol(this)">/</button></td>
+              <td><button onclick="setCurrentValue(this)">/</button></td>
             </tr>
             <tr>
               <td><button onclick="deleteLastNumber()">DEL</button></td>

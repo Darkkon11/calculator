@@ -10,7 +10,7 @@ button {
   height: 8vw;
   text-align: center;
   font-size: 3vw;
-  border: black solid;
+  border: 3px black solid;
 }
 button:hover {
   cursor: pointer;
@@ -24,7 +24,7 @@ button:hover {
   border: black solid;
 }
 .display {
-  width: 99.4%;
+  width: 99.5%;
   height: 20%;
   font-size: 4vw;
   text-align: right;
@@ -65,5 +65,5 @@ button:hover {
   background-color: #a8321d;
 }
 .display p {
-  margin-right: 0.5vw;
+  margin-right: 1vw;
 }

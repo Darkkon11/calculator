@@ -15,15 +15,6 @@ function setCurrentValue(elem) {
   return displayvar;
 }
 
-function setSymbol(elem) {
-  var lastValue = displayvar.slice(-1);
-  if (lastValue != elem.innerHTML) {
-    displayvar += elem.innerHTML;
-  }
-  changeValue();
-  return displayvar;
-}
-
 function deleteLastNumber() {
   displayvar = displayvar.slice(0, -1);
   if (displayvar == "") {
@@ -33,10 +24,14 @@ function deleteLastNumber() {
   return displayvar;
 }
 
-function calculate() {}
-
 function cleanAll() {
   displayvar = 0;
+  changeValue();
+  return displayvar;
+}
+
+function calculate() {
+  displayvar = eval(displayvar);
   changeValue();
   return displayvar;
 }
